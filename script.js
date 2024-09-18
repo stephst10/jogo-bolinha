@@ -68,3 +68,15 @@ function ResetGameArea() {
     ClearShapes();
     gameArea.style.backgroundColor = originalBackgroundColor;
 }
+
+document.addEventListener('keydown', (event) => {
+    if (event.code === 'Digit1') {
+        CreateSquares();
+    }
+    else if (event.code === 'Digit2') {
+        CreateCircles();
+    }
+    else if (event.code === 'Digit3') {
+        ResetGameArea();
+    }
+});
