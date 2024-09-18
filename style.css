@@ -11,3 +11,13 @@ body {
     height: 100vh;
     background-color: aquamarine;
 }
+
+#circle {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    background-color: brown;
+    border-radius: 50%;
+    left: 50px;
+    top: 50px;
+}
