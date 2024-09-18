@@ -58,3 +58,13 @@ function CreateCircles() {
         gameArea.appendChild(smallCircle);
     }
 }
+
+function ClearShapes() {
+    const shapes = document.querySelectorAll('.square, .small-circle');
+    shapes.forEach(shape => shape.remove());
+}
+
+function ResetGameArea() {
+    ClearShapes();
+    gameArea.style.backgroundColor = originalBackgroundColor;
+}
